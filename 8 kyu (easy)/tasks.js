@@ -123,3 +123,70 @@ function boolToWord(bool) {
 function squareSum(numbers) {
   return numbers.map((el) => el * el).reduce((acc, cur) => acc + cur, 0);
 }
+
+
+//TASK Remove First and Last Character
+// Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string.
+
+// Important: Your function should handle strings of any length ≥ 2 characters. For strings with exactly 2 characters, return an empty string.
+
+// SOLUTION
+
+function removeChar(str){
+  return str.length > 2 ? str.slice(1, -1) : ""
+//   or just
+//   return str.slice(1, -1)
+};
+
+//TASK 
+// Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+// SOLUTION
+function opposite(number) {
+ return -number
+}
+
+//TASK Grasshopper - Summation
+// Write a program that finds the summation of every number from 1 to num (both inclusive). The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
+// SOLUTION
+var summation = function (num) {
+  let sum = 0
+  for (let i = 1; i <= num; i++){
+    sum = sum + i
+  }
+  return sum
+  
+//   or just
+//   n * (n + 1) / 2;
+}
+
+//TASK 
+// Write a function that removes the spaces from the string, then return the resultant string.
+// SOLUTION
+function noSpace(x){
+return x.split(" ").join("")
+//   or return x.replace(/\s/g, "");
+}
+
+//TASK 
+// Given an array of integers your solution should find the smallest integer.
+
+// SOLUTION
+function findSmallestInt(arr) {
+  return Math.min(...arr);
+}
+
+//TASK 
+
+// SOLUTION
+
+//TASK 
+
+// SOLUTION
+
+//TASK 
+
+// SOLUTION
+
+//TASK 
+
+// SOLUTION
