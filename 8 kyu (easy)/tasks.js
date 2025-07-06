@@ -65,3 +65,61 @@ function positiveSum(arr) {
 
   return arr.filter((num) => num > 0).reduce((acc, val) => acc + val, 0);
 }
+
+//TASK Reversed Strings
+//  Complete the solution so that it reverses the string passed into it.
+
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+
+// SOLUTION
+
+function solution(str) {
+  //   split string into array by each character
+  let x = str.split("");
+  // use built in reverse array method
+  let y = x.reverse();
+  //   join the array into a reversed string
+  let z = y.join("");
+  return z;
+
+  //   or chain everything together
+  // return str.split("").reverse().join("")
+
+  //   or do it manually withut using built in reverse.()
+  // let newString = ""
+  // for (let i = str.length - 1, i >= 0, i--){
+  //   newString += str[i]
+  // }
+}
+
+//TASK Convert a Number to a String
+// We need a function that can transform a number (integer) into a string.
+
+// Examples (input --> output): 123  --> "123"
+
+// SOLUTION
+function numberToString(num) {
+  return num.toString();
+  //   or
+  //   return num + ""
+}
+
+//TASK Convert boolean values to strings 'Yes' or 'No'.
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+// SOLUTION
+
+function boolToWord(bool) {
+  return bool === true ? "Yes" : "No";
+}
+
+//TASK Square(n) Sum
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// For example, for [1, 2, 2] it should return 9
+
+// SOLUTION
+function squareSum(numbers) {
+  return numbers.map((el) => el * el).reduce((acc, cur) => acc + cur, 0);
+}
