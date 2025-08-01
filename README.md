@@ -1,0 +1,1 @@
+This monorepo serves as a collection od small projects meant as preparation for the coding part of job interviews, hence none of them are deployed of styled to look pretty, its just logic & coding practice.
